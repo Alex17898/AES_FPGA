@@ -1,0 +1,3 @@
+rm -rfv test_vector_gen.out *.dat
+gcc -Wall test_vector_gen.c -o test_vector_gen.out
+./test_vector_gen.out

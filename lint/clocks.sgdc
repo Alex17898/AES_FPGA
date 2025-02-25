@@ -1,0 +1,840 @@
+current_design  "aes"
+
+########################################################################
+#Section 1: List of source clocks
+#These clocks have set_false_path/set_clock_groups/set_clock_uncertainty associated with them
+#constraints.sdc@@1@@
+clock  -name "clk"  -domain d0  -edge { "0.000000" "5.000000"}  -period 10 -tag clk 
+
+########################################################################
+#Section 2: List of remaining source clocks
+#These clocks do not have the set_false_path/set_clock_groups/set_clock_uncertainty constraints associated with them
+
+########################################################################
+#Section 3: List of generated clocks
+#These clocks satisfy either of the following conditions
+ #a. Generated clocks have domains different than the domains of their source clocks
+ #b. Generated clocks are specified on the black-boxes
+
+########################################################################
+#Section 4: List of generated clocks which have same domain as that of their source clock 
+
+########################################################################
+#Section 5: List of valid set_case_analyis constraint generated from set_case_analysis command.
+
+########################################################################
+#Section 6: List of valid abstract_port/input constraint generated from set_input_delay command.
+#constraints.sdc@@5@@
+abstract_port -ports "key_ld_p" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[0]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[1]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[2]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[3]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[4]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[5]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[6]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[7]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[8]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[9]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[10]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[11]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[12]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[13]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[14]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[15]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[16]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[17]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[18]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[19]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[20]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[21]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[22]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[23]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[24]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[25]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[26]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[27]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[28]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[29]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[30]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[31]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[32]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[33]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[34]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[35]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[36]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[37]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[38]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[39]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[40]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[41]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[42]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[43]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[44]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[45]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[46]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[47]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[48]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[49]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[50]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[51]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[52]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[53]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[54]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[55]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[56]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[57]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[58]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[59]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[60]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[61]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[62]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[63]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[64]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[65]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[66]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[67]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[68]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[69]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[70]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[71]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[72]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[73]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[74]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[75]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[76]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[77]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[78]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[79]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[80]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[81]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[82]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[83]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[84]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[85]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[86]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[87]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[88]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[89]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[90]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[91]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[92]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[93]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[94]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[95]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[96]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[97]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[98]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[99]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[100]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[101]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[102]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[103]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[104]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[105]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[106]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[107]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[108]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[109]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[110]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[111]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[112]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[113]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[114]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[115]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[116]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[117]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[118]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[119]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[120]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[121]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[122]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[123]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[124]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[125]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[126]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "key[127]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "enc" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din_vld" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[0]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[1]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[2]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[3]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[4]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[5]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[6]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[7]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[8]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[9]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[10]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[11]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[12]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[13]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[14]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[15]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[16]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[17]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[18]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[19]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[20]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[21]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[22]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[23]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[24]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[25]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[26]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[27]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[28]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[29]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[30]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[31]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[32]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[33]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[34]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[35]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[36]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[37]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[38]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[39]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[40]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[41]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[42]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[43]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[44]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[45]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[46]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[47]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[48]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[49]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[50]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[51]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[52]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[53]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[54]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[55]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[56]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[57]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[58]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[59]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[60]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[61]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[62]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[63]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[64]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[65]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[66]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[67]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[68]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[69]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[70]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[71]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[72]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[73]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[74]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[75]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[76]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[77]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[78]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[79]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[80]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[81]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[82]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[83]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[84]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[85]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[86]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[87]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[88]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[89]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[90]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[91]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[92]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[93]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[94]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[95]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[96]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[97]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[98]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[99]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[100]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[101]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[102]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[103]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[104]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[105]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[106]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[107]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[108]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[109]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[110]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[111]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[112]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[113]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[114]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[115]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[116]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[117]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[118]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[119]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[120]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[121]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[122]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[123]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[124]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[125]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[126]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "din[127]" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "dout_rdy" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "clk" -clock "clk"
+#constraints.sdc@@5@@
+abstract_port -ports "rst_n" -clock "clk"
+
+########################################################################
+#Section 7: List of valid output constraint generated from set_output_delay command.
+#constraints.sdc@@6@@
+output  -name "din_rdy"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout_vld"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[0]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[1]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[2]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[3]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[4]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[5]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[6]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[7]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[8]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[9]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[10]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[11]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[12]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[13]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[14]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[15]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[16]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[17]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[18]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[19]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[20]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[21]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[22]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[23]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[24]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[25]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[26]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[27]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[28]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[29]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[30]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[31]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[32]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[33]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[34]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[35]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[36]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[37]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[38]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[39]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[40]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[41]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[42]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[43]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[44]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[45]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[46]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[47]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[48]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[49]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[50]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[51]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[52]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[53]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[54]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[55]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[56]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[57]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[58]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[59]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[60]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[61]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[62]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[63]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[64]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[65]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[66]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[67]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[68]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[69]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[70]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[71]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[72]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[73]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[74]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[75]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[76]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[77]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[78]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[79]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[80]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[81]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[82]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[83]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[84]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[85]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[86]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[87]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[88]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[89]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[90]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[91]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[92]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[93]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[94]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[95]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[96]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[97]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[98]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[99]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[100]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[101]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[102]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[103]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[104]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[105]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[106]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[107]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[108]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[109]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[110]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[111]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[112]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[113]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[114]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[115]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[116]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[117]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[118]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[119]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[120]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[121]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[122]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[123]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[124]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[125]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[126]"  -clock "clk"
+#constraints.sdc@@6@@
+output  -name "dout[127]"  -clock "clk"
+
+########################################################################
+#Section 8: List of valid clock_sense constraint generated from set_clock_sense command.
+#These constraint are generated only for -stop_propagtion in set_clock_sense.
+
+########################################################################
+#Section 9: List of valid cdc false path constraint generated from sdc command.
+#These constraint are generated only for real clocks.
+
+########################################################################
+#Section 10: List of disable_timing constraint generated from set_disable_timing sdc command.
+#These constraint are generated only for those sdc command which have object list as lib cells only.
+
+########################################################################
+#Section 11: List of valid false path constraint generated from sdc command.
+#These constraint are generated only for real clocks.
+#The type for constraint false_path is specified as below:
+#        - scg_logically_exclusive: When it is translated from set_clock_group -logically_exclusive
+#        - scg_physically_exclusive: When it is translated from set_clock_group -physically_exclusive
+#        - scg_asynchronous: When it is translated from set_clock_group -asynchronous
+#        - sfp: When it is translated from set_false_path
+
+########################################################################
+#Section 12: List of valid sg_multi_cycle constraint generated from sdc command.
+
+########################################################################
+#Section 13: List of valid set_lib_timing_mode constraint generated from set_mode sdc command.

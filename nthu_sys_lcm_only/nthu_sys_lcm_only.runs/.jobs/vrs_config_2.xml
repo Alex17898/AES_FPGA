@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="urbana_microblaze_0_0_synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/urbana_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="urbana_clk_wiz_1_1_synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/urbana_clk_wiz_1_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="urbana_rst_clk_wiz_1_100M_0_synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/urbana_rst_clk_wiz_1_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="urbana_xbar_1_synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/urbana_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="urbana_dlmb_v10_0_synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/urbana_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="urbana_ilmb_v10_0_synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/urbana_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="urbana_dlmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="urbana_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/urbana_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="urbana_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/urbana_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="urbana_lmb_bram_0_synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/urbana_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/balance/work/FPGA/nthu_sys_lcm_only/nthu_sys_lcm_only.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="urbana_microblaze_0_0_synth_1"/>
+		<Parent Id="urbana_clk_wiz_1_1_synth_1"/>
+		<Parent Id="urbana_rst_clk_wiz_1_100M_0_synth_1"/>
+		<Parent Id="urbana_xbar_1_synth_1"/>
+		<Parent Id="urbana_dlmb_v10_0_synth_1"/>
+		<Parent Id="urbana_ilmb_v10_0_synth_1"/>
+		<Parent Id="urbana_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="urbana_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="urbana_lmb_bram_0_synth_1"/>
+	</Run>
+</Runs>
+

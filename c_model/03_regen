@@ -1,0 +1,4 @@
+./test_vector_gen.out
+./02_move 1
+./test_vector_gen.out
+./02_move 2

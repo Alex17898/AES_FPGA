@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/urbana/ip/urbana_microblaze_0_0/sim/urbana_microblaze_0_0.vhd" \
+"../../../bd/urbana/ip/urbana_axi_uartlite_0_0/sim/urbana_axi_uartlite_0_0.vhd" \
+"../../../bd/urbana/ip/urbana_mdm_1_1/sim/urbana_mdm_1_1.vhd" \
+"../../../bd/urbana/ip/urbana_rst_clk_wiz_1_100M_0/sim/urbana_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/urbana/ip/urbana_dlmb_v10_0/sim/urbana_dlmb_v10_0.vhd" \
+"../../../bd/urbana/ip/urbana_ilmb_v10_0/sim/urbana_ilmb_v10_0.vhd" \
+"../../../bd/urbana/ip/urbana_dlmb_bram_if_cntlr_0/sim/urbana_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/urbana/ip/urbana_ilmb_bram_if_cntlr_0/sim/urbana_ilmb_bram_if_cntlr_0.vhd" \
+
+nosort

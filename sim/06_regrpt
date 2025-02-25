@@ -1,0 +1,9 @@
+#!/bin/bash
+declare -a cov_dir
+           cov_dir[1]="cov_fifo_io"
+           cov_dir[2]="cov_dpi_c"
+           cov_dir[3]=""
+
+for dir in "${!cov_dir[@]}"; do
+   ./04_grep ${cov_dir[$dir]}
+done

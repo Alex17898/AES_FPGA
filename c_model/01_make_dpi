@@ -1,0 +1,2 @@
+rm ./lib.so
+gcc -fPIC -g -shared -o lib.so lib/*

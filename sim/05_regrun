@@ -1,0 +1,51 @@
+#!/bin/bash
+declare -a testlist
+           testlist[1]="test_use_vec1"
+           testlist[2]="test_use_vec2"
+           testlist[3]="test_use_vec3"
+           testlist[4]="test_use_vec4"
+           testlist[5]="test_use_vec5"
+
+declare -a testdefine
+           testdefine[1]=" +define+TC1"
+           testdefine[2]=" +define+TC2"
+
+declare -a dpidefine
+           dpidefine[1]=""
+           dpidefine[2]=" +define+USE_DPI"
+
+for dpi in "${!dpidefine[@]}"; do
+   if   [ "$dpi" == 1 ]; then
+         mkdir -p cov_fifo_io
+         cov_dir="cov_fifo_io";
+   elif [ "$dpi" == 2 ]; then
+         mkdir -p cov_dpi_c
+         cov_dir="cov_dpi_c";
+   else       
+         cov_dir="";
+   fi             
+
+   for id in "${!testlist[@]}"; do
+      for def in "${!testdefine[@]}"; do
+         testname=${testlist[$id]}_tc"$def"_dpi"$dpi"
+         test=${testlist[$id]}
+         test+=${testdefine[$def]}
+         test+=${dpidefine[$dpi]}
+   
+         vcs -full64 -R \
+             -f vcs.f \
+             ../c_model/lib.so \
+             -cm line+branch+cond+fsm \
+             -cm_dir  ./"$cov_dir"/simv \
+             -cm_hier dut.hier \
+             -cm_line contassign \
+             -cm_cond std+allops \
+             -cm_noconst \
+             -cm_fsmopt report2StateFsms \
+             -cm_name ${testname} \
+             -l ./"$cov_dir"/${testname}.log \
+             -f sim.f +${test}
+      done
+   done
+done
+

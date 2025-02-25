@@ -1,0 +1,2 @@
+mv -f test_vec.dat ./test_vec/test_vec$1.dat
+mv -f gold_vec.dat ./test_vec/gold_vec$1.dat

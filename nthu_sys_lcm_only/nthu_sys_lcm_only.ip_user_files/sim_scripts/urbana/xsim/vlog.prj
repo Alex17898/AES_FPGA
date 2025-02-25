@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "../../../../nthu_sys_lcm_only.srcs/sources_1/bd/urbana/ipshared/4868" --include "../../../../nthu_sys_lcm_only.srcs/sources_1/bd/urbana/ipshared/ec67/hdl" \
+"../../../bd/urbana/ip/urbana_clk_wiz_1_1/urbana_clk_wiz_1_1_clk_wiz.v" \
+"../../../bd/urbana/ip/urbana_clk_wiz_1_1/urbana_clk_wiz_1_1.v" \
+"../../../bd/urbana/ip/urbana_xbar_1/sim/urbana_xbar_1.v" \
+"../../../bd/urbana/ip/urbana_lmb_bram_0/sim/urbana_lmb_bram_0.v" \
+"../../../bd/urbana/sim/urbana.v" \
+"../../../bd/urbana/ipshared/73f3/src/aes.v" \
+"../../../bd/urbana/ipshared/73f3/hdl/aes_v1_0_S00_AXI.v" \
+"../../../bd/urbana/ipshared/73f3/hdl/aes_v1_0.v" \
+"../../../bd/urbana/ip/urbana_aes_0_1/sim/urbana_aes_0_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

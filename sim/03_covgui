@@ -1,0 +1,9 @@
+#!/bin/bash
+read -p "(1) fifo io (2) dpi-c =====>" choose
+if   [ "$choose" == 1 ]; then
+   verdi -cov -covdir ./cov_fifo_io/simv.vdb &
+elif [ "$choose" == 2 ]; then
+   verdi -cov -covdir ./cov_dpi_c/simv.vdb &
+else
+   echo "need to type in 1 or 2"
+fi

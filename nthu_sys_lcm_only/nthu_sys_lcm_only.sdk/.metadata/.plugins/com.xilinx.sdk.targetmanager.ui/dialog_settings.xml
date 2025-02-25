@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="bootloop" key="urbana_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="urbana_wrapper.mmi" key="urbana_wrapper_hw_platform_0-bmmFile"/>
+	<item value="urbana_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="urbana_wrapper.bit" key="urbana_wrapper_hw_platform_0-bitFile"/>
+	<item value="false" key="urbana_wrapper_hw_platform_0-partial_bit"/>
+	<item value="Auto Detect" key="urbana_wrapper_hw_platform_0-device"/>
+	<item value="Local" key="urbana_wrapper_hw_platform_0-target"/>
+</section>

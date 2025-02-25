@@ -1,0 +1,5 @@
+`include "./test_case/test_use_vec1.v"
+`include "./test_case/test_use_vec2.v"
+`include "./test_case/test_use_vec3.v"
+`include "./test_case/test_use_vec4.v"
+`include "./test_case/test_use_vec5.v"

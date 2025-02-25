@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jun  2 16:57:23 2024
+# Process ID: 25176
+# Current directory: D:/Security/nthu_sys_lcm_only
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29740 D:\Security\nthu_sys_lcm_only\nthu_sys_lcm_only.xpr
+# Log file: D:/Security/nthu_sys_lcm_only/vivado.log
+# Journal file: D:/Security/nthu_sys_lcm_only\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Security/nthu_sys_lcm_only/nthu_sys_lcm_only.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Security/nthu_sys_lcm_only/nthu_sys_lcm_only.srcs/sources_1/bd/urbana/urbana.bd}

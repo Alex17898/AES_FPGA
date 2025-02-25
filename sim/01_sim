@@ -1,0 +1,9 @@
+rm -rf simv
+rm -rf simv.daidir
+
+vcs -full64 -R \
+    -f vcs.f \
+    ../c_model/lib.so \
+    -f sim.f \
+    -l sim.log \
+    "$@"

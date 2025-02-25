@@ -1,0 +1,3 @@
+grep --color -i -n WARNING ./$1/*.log 
+grep --color -i -n PASSED  ./$1/*.log
+grep --color -i -n FAIL    ./$1/*.log
